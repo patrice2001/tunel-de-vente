@@ -260,12 +260,13 @@ h3 {
 		&:first-child {
 			a {
 				background: none;
-				border: 1px solid #3377c0;
+				// border: 1px solid #3377c0;
 				color: #3377c0;
+				
 				&:hover {
 					border-color: transparent;
 					color: #fff;
-					background: #3b87d9;
+					// background: #3b87d9;
 				}
 			}
 		}
@@ -274,7 +275,8 @@ h3 {
 				content: "Your must fill all fields, to be able to continue";
 			}
 			a {
-			    display: none;
+				display: none;
+				
 			}
 		}
 	}
@@ -318,6 +320,7 @@ h3 {
 		align-items: flex-end;
 		li {
 			margin-bottom: 20px;
+			
 		}
 	}
 	.grid-item {

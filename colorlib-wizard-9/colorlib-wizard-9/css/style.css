@@ -13,15 +13,19 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Poppins-Regular";
+  font-family: "Arial";
   font-size: 14px;
   margin: 0;
   color: #999;
-  background: url("../images/form-wizard-bg.jpg") no-repeat center center;
+  background-color: white;
   height: 100vh;
   background-size: cover;
   display: flex;
   align-items: center; }
+
+.center{
+  justify-content: center;
+}
 
 :focus {
   outline: none; }
@@ -32,7 +36,7 @@ textarea {
 input, textarea, select, button {
   font-family: "Poppins-Regular";
   font-size: 14px;
-  color: #333; }
+  color: white; }
 
 select {
   -moz-appearance: none;
@@ -52,6 +56,17 @@ ul {
 a {
   text-decoration: none; }
 
+i{
+  color: white;
+}
+ul{
+  color: white;
+}
+
+li{
+  color: white;
+}
+
 textarea {
   resize: none; }
 
@@ -67,9 +82,18 @@ img {
 
 .wizard {
   position: relative;
-  background: #fff;
+  background: #3293ad;
   padding: 64px 58px 0;
-  height: 548px; }
+  height: 548px;
+  border: 10px solid #269dbe ;
+}
+
+.packChoice{
+  justify-content: center;
+}
+
+
+
 
 .steps .current-info, .steps .number {
   display: none; }
@@ -84,12 +108,12 @@ img {
     .steps ul:before {
       content: "1";
       font-size: 40px;
-      color: #ccc;
+      color: white;
       font-family: "Poppins-Medium"; }
     .steps ul:after {
       content: "/ 3";
       font-size: 15px;
-      color: #ccc;
+      color: white;
       font-family: "Poppins-Medium";
       position: absolute;
       left: 16px;
@@ -107,7 +131,8 @@ img {
 h3 {
   font-family: "Poppins-SemiBold";
   font-size: 35px;
-  color: #3377c0;
+  color: #ffff00;
+
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -124,9 +149,11 @@ h3 {
       margin-right: 0; }
 
 .form-col label {
-  color: #333;
+  color: white;
   margin-bottom: 7px;
-  display: block; }
+  display: block; 
+  font-size: 20px;
+}
 
 .form-holder {
   position: relative; }
@@ -147,12 +174,13 @@ h3 {
 
 .form-control {
   height: 42px;
-  border: 1px solid #ccc;
+  border: 2px solid white;
+  border-radius: 5px;
   width: 100%;
   background: none;
   font-size: 15px;
   padding-left: 46px;
-  color: #999;
+  color: white;
   font-family: "Poppins-Medium";
   /* &::-webkit-input-placeholder { 
   	color: #333;
@@ -214,22 +242,29 @@ h3 {
   align-items: center;
   color: #fff;
   cursor: pointer;
-  background: #3377c0;
+  background: #f6a623;
+  border: 2px solid white;
+  border-radius: 5px;
   text-transform: uppercase;
   justify-content: center;
   letter-spacing: 1px; }
   .actions li a:hover {
-    background: #3b87d9; }
+    background: white;
+    color: #f6a623;
+    border: #f6a623 2px solid;
+   }
 .actions li:first-child a {
-  background: none;
-  border: 1px solid #3377c0;
-  color: #3377c0; }
+  background: #f6a623;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white; }
   .actions li:first-child a:hover {
     border-color: transparent;
-    color: #fff;
-    background: #3b87d9; }
+    border: 2px solid #f6a623;
+    color: #f6a623;
+    background: white; }
 .actions li[aria-disabled="true"]:before {
-  content: "Your must fill all fields, to be able to continue"; }
+  content: ""; }
 .actions li[aria-disabled="true"] a {
   display: none; }
 
