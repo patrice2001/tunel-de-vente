@@ -2003,10 +2003,10 @@ var defaults = $.fn.steps.defaults = {
          *
          * @property finish
          * @type String
-         * @default "Finish"
+         * @default "Envoyer"
          * @for defaults
          **/
-        finish: "Finish",
+        finish: "Envoyer",
 
         /**
          * Label for the next button.

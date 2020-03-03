@@ -6,8 +6,8 @@ $(function(){
         enableAllSteps: true,
         transitionEffectSpeed: 300,
         labels: {
-            next: "Next",
-            previous: "Back"
+            next: "Suivant",
+            previous: "Retour"
         },
         onStepChanging: function (event, currentIndex, newIndex) { 
             if ( newIndex === 1 ) {
